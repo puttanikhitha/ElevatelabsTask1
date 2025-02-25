@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Tourism Adventure</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://t3.ftcdn.net/jpg/08/40/21/32/360_F_840213296_y9Mlsey2QOCLWpyJ0IQONHzle80y4s1G.jpg" alt="Space Logo">
+            <span>Space Tourism</span>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#booking">Booking</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="burger" onclick="toggleMenu()">☰</div>
+    </nav>
+
+   
+    <header id="home">
+        <div class="overlay"></div>
+        <h1>🚀 Explore the Universe</h1>
+        <p>"Experience the universe beyond imagination—because the sky is not the limit." 🌍✨</p>
+        <p>Book your space adventure today!</p>
+        
+    </header>
+
+    
+    <section id="destinations" class="destinations">
+        <h2>Choose Your Destination</h2>
+        <div class="cards">
+            <div class="card" onclick="showDetails('Mars')">
+                <img src="https://www.columbiatribune.com/gcdn/authoring/2017/03/15/NCDT/ghows-MO-a54ee6be-2238-4c5f-90ec-1f563165f73e-02566ce5.jpeg" alt="Mars">
+                <h3>Mars</h3>
+                <p>Red Planet Expedition</p>
+            </div>
+            <div class="card" onclick="showDetails('Moon')">
+                <img src="https://cdn.pixabay.com/photo/2016/08/12/02/10/space-1587393_1280.jpg" alt="Moon">
+                <h3>Moon</h3>
+                <p>Lunar Getaway</p>
+            </div>
+            <div class="card" onclick="showDetails('Moon')">
+                <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/astro/exo-explore/internal_resources/1777/Red_Dwarf_Planet.jpeg?w=946&h=710&fit=clip&crop=faces%2Cfocalpoint" alt="Moon">
+                <h3>Red Dwarf</h3>
+                <p>Habitable Zone</p>
+            </div>
+            <div class="card" onclick="showDetails('Jupiter')">
+                <img src="https://images.unsplash.com/photo-1614732414444-096e5f1122d5?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8anVwaXRlciUyMHBsYW5ldHxlbnwwfHwwfHx8MA%3D%3D" alt="Jupiter">
+                <h3>Jupiter</h3>
+                <p>Gas Giant Exploration</p>
+            </div>
+        </div>
+    </section>
+
+  
+    <section id="booking" class="booking">
+        <h2>Reserve Your Spot</h2>
+        <form id="bookingForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    
+    <footer id="contact">
+        <h3 style="color: aqua;">Contact Us</h3>
+        <p>📞 +91 912345678</p>
+        <p><i class="fas fa-envelope"></i> nikhitha@wearabletech.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Future St, Tech City</p>
+        <p>© Nikhitha Putta &#9889;. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
